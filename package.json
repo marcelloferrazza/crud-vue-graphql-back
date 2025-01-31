@@ -1,0 +1,20 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "apollo-server": "^2.9.6",
+    "docker": "^1.0.0",
+    "docker-compose": "^1.1.0",
+    "graphql": "^14.5.8",
+    "knex": "^3.1.0",
+    "pg": "^8.13.1"
+  }
+}
