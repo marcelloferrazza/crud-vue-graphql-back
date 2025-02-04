@@ -6,7 +6,7 @@ export function up(knex) {
     return knex.schema.createTable("movies", (table) => {
         table.increments("id").primary();
         table.string("name",255).notNullable();
-
+            
     })
 };
 

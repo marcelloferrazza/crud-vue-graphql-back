@@ -1,13 +1,15 @@
 const typeDefs = `
+    scalar NonEmptyString
+
     type Gender {
         id: ID!
-        name: String!
-        nameTranslate: String!
+        name: NonEmptyString!
+        nameTranslate: NonEmptyString!
     }
 
     type Movie {
         id: ID!
-        name: String!
+        name: NonEmptyString!
         type: Gender!
     } 
 
@@ -18,13 +20,13 @@ const typeDefs = `
     }
 
     input MovieInput {
-        name: String!
+        name: NonEmptyString!
         type: ID!
     }
 
     input UpdateMovieInput {
         id: ID!
-        name: String
+        name: NonEmptyString!
         type: ID
     }
 

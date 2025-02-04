@@ -1,5 +1,8 @@
+import { NonEmptyStringResolver } from "graphql-scalars";
 
 const resolvers = {
+    NonEmptyString: NonEmptyStringResolver,
+
     Movie: { 
         type: async(parent, args, context) => { 
             console.log(parent)
